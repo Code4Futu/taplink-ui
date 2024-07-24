@@ -17,75 +17,10 @@ export default defineConfig({
 			transformers: [transformerVariantGroup()],
 			shortcuts: [
 				[
-					'primary-gradient-inactive',
-					'bg-gradient-to-r from-#004851 from-0% to-sub to-100%',
+					'primary-gradient',
+					'bg-gradient-to-r from-#754DFB from-0.05% to-#F561C0 to-99.93%',
 				],
-				[
-					'primary-gradient-active',
-					'bg-gradient-to-r from-sub to-primary opacity-100',
-				],
-				[
-					'portfolio-gradient',
-					'bg-gradient-to-r from-[rgba(255,255,255,0.10)] from-0% to-[rgba(78,180,254,0.12)] to-100%',
-				],
-				[
-					'btn',
-					'flex items-center justify-center h-24px font-700 text-16px hover:not-disabled:cursor-pointer transition-all duration-1000 ease-linear disabled:pointer-events-none',
-				],
-				[
-					/^btn-(.*)$/,
-					([, c]) =>
-						`bg-${c} text-#fff hover:not-disabled:bg-op-75 disabled:(cursor-initial text-grey bg-#4c4c54)`,
-				],
-				[
-					/^btn-outline-(.*)$/,
-					([, c]) =>
-						`b-1px b-${c} b-solid bg-transparent text-${c} hover:text-panel hover:bg-${c} disabled:(cursor-initial text-grey b-#4c4c54)`,
-				],
-				[
-					'modal-button',
-					'btn h-16px ml-5 text-14px leading-16px font-400 c-primary underline hover:op-60 transition-all duration-200 ease-in-out disabled:c-grey',
-				],
-				//PAGE
-				[
-					'page-content',
-					'max-w-100% xl:max-w-1200px px-15px py-30px mx-auto w-100% h-100% lg:py-48px',
-				],
-				//MENU ITEM
-				[
-					'menu-item',
-					'flex items-center h-100% font-500 text-14px hover:text-primary',
-				],
-				// ACCOUNT MENU
-				['account-menu', 'h-48px text-14px font-500 cursor-pointer'],
-				[
-					'account-menu-item',
-					'w-100% p-0 m-0 flex text-14px leading-16px font-normal c-grey',
-				],
-				// UNDERLINE
-				['line-under', 'b-b-dashed b-b-1px b-b-#615D5D'],
-				['line-under-1', 'underline underline-#615D5D decoration-dashed'],
-				// TRADER
-				[
-					'trade-info-row',
-					'!table-row [&>div]:(table-cell text-12px 2xl:text-14px vertical-mid) hover:(bg-gradient-to-r from-transparent via-secondary via-op-50 to-transparent)',
-				],
-				// TOAST
-				[
-					'toast-container',
-					'rd-5px bg-panel b-border py-14px px-16px [&_[data-icon]]:(mr-10px) [&_[data-content]]:(gap-4px)',
-				],
-				[
-					'toast-close-button',
-					'right-0 left-auto translate-x-35% -translate-y-35% c-white bg-panel b-border hover:op75 [&[data-disabled=true]]:(hidden)',
-				],
-				['toast-title', 'font-600 text-13px'],
-				['toast-description', 'font-400 text-13px leading-18px !text-white'],
-				// LOADER
-				[
-					'loading-container',
-					'flex items-center justify-center h-100vh w-100vw !bg-background op-70 [&>img]:w-250px',
-				],
+				['trade-info-row', '!table-row [&>div]:(table-cell vertical-mid)'],
 			],
 			presets: [
 				presetWind(),
@@ -204,11 +139,20 @@ export default defineConfig({
 				}),
 			],
 			theme: {
+				screen: {
+					large: '1728px',
+				},
 				colors: {
 					background: '#141316',
 					container: '#232631',
 					grey: '#B4B5B9',
 					lightgrey: '#ECECEC',
+					boldgrey: '#666C81',
+					input: 'rgba(102, 108, 129, 0.32)',
+					list: 'rgba(255, 255, 255, 0.48)',
+					border: 'rgba(255, 255, 255, 0.05)',
+					gray: '#9F9F9F',
+					red: '#F00',
 				},
 			},
 			preflights: [
@@ -269,6 +213,7 @@ export default defineConfig({
 			'@types': path.resolve('./src/types/'),
 			'@assets': path.resolve('./src/assets/'),
 			'@configs': path.resolve('./src/configs/'),
+			'@hooks': path.resolve('./src/hooks'),
 		},
 	},
 	build: {

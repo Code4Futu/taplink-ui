@@ -6,7 +6,9 @@ import IconProduct from '@assets/svg/ic-product.svg?react';
 import IconSetting from '@assets/svg/ic-setting.svg?react';
 import IconSignOut from '@assets/svg/ic-sign-out.svg?react';
 import IconUser from '@assets/svg/ic-user.svg?react';
+import { config } from '@configs/wagmi';
 import { shortenAddress } from '@utils/addresses';
+import { disconnect } from '@wagmi/core';
 import c from 'classnames';
 import { NavLink } from 'react-router-dom';
 import { useAccount } from 'wagmi';
@@ -24,7 +26,7 @@ export const MenuItems = [
 	{
 		title: 'Products',
 		url: '/products',
-		matchedUrl: ['trade', 'spot'],
+		matchedUrl: [],
 		items: [],
 		image: (
 			<IconProduct className='text-white size-21.423px lg:size-24px group-hover:text-[#F561C0]' />
@@ -32,8 +34,8 @@ export const MenuItems = [
 	},
 
 	{
-		title: 'Users',
-		url: '/users',
+		title: 'Admins',
+		url: '/admins',
 		matchedUrl: [],
 		items: [],
 		image: (
@@ -60,10 +62,12 @@ export const MenuItems = [
 	},
 ];
 
-export const MenuMobile: React.FC<{
+interface IMenuMobile {
 	visible?: boolean;
 	onDismiss: () => void;
-}> = ({ visible, onDismiss }) => {
+}
+
+export const MenuMobile: React.FC<IMenuMobile> = ({ visible, onDismiss }) => {
 	const { address } = useAccount();
 	return (
 		<nav
@@ -113,7 +117,10 @@ export const MenuMobile: React.FC<{
 					</div>
 				</div>
 				<div className='flex items-end justify-center flex-1 h-full mb-1'>
-					<button className='inline-flex justify-center items-center py-9.1px px-18.2px rounded-65px bg-[rgba(102,108,129,0.25)] gap-2'>
+					<button
+						className='inline-flex justify-center items-center py-9.1px px-18.2px rounded-65px bg-[rgba(102,108,129,0.25)] gap-2'
+						onClick={() => disconnect(config)}
+					>
 						<IconSignOut className='size-20.8px' />
 						<span className='text-xs font-medium'>Logout</span>
 					</button>

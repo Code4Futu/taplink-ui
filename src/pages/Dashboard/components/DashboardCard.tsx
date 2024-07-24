@@ -1,5 +1,4 @@
 import c from 'classnames';
-
 export interface IDashboardCard {
 	value: string;
 	title: string;

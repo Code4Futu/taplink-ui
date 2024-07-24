@@ -1,16 +1,14 @@
-import IconUser from '@assets/svg/ic-user.svg?react';
+import IconArrowRight from '@assets/svg/ic-arrow-right.svg?react';
+import IconArrowWise from '@assets/svg/ic-arrow-wise.svg?react';
+import IconCart from '@assets/svg/ic-cart.svg?react';
+import IconDot from '@assets/svg/ic-dot.svg?react';
 import IconProduct from '@assets/svg/ic-product.svg?react';
-import { DashboardCard, IDashboardCard } from './components/DashboardCard';
-import { useAccount } from 'wagmi';
 import IconSearch from '@assets/svg/ic-search.svg?react';
+import IconUser from '@assets/svg/ic-user.svg?react';
 import { UserButton } from '@components/UserButton';
 import c from 'classnames';
-import IconCart from '@assets/svg/ic-cart.svg?react';
-import IconArrowWise from '@assets/svg/ic-arrow-wise.svg?react';
-import IconArrowRight from '@assets/svg/ic-arrow-right.svg?react';
-import IconDot from '@assets/svg/ic-dot.svg?react';
-import Slider from '@components/Slider/Slider';
 import { useState } from 'react';
+import { DashboardCard, IDashboardCard } from './components/DashboardCard';
 
 const cardTemp: IDashboardCard[] = [
 	{
@@ -28,7 +26,6 @@ const cardTemp: IDashboardCard[] = [
 ];
 
 const Dashboard: React.FC = () => {
-	const { address } = useAccount();
 	const [sliderValue, setSliderValue] = useState(50);
 
 	const handleSliderChange = (newValue: number) => {
@@ -37,7 +34,7 @@ const Dashboard: React.FC = () => {
 
 	return (
 		<div className='w-full text-sm'>
-			<div className='items-center justify-between hidden xl:flex'>
+			<div className='items-center justify-between hidden lg:flex'>
 				<div className='relative h-59px rounded-100px !b-2px b-solid b-lightgrey bg-[rgba(217,217,217,0.15)] min-w-727px flex items-center gap-2 p-3'>
 					<IconSearch className='size-32px' />
 					<input
@@ -63,7 +60,7 @@ const Dashboard: React.FC = () => {
 				Dashboard
 			</div>
 			<div
-				className={c('grid grid-cols-2 gap-3', 'xl:gap-[43px] xl:mt-[30px]')}
+				className={c('grid grid-cols-2 gap-3', 'lg:gap-[43px] lg:mt-[30px]')}
 			>
 				{cardTemp.map((item, idx) => (
 					<DashboardCard

@@ -25,7 +25,8 @@
 			"@contexts/*": ["contexts/*"],
 			"@routes/*": ["routes/*"],
 			"@assets/*": ["assets/*"],
-			"@configs/*": ["configs/*"]
+			"@configs/*": ["configs/*"],
+			"@hooks/*": ["hooks/*"]
 		}
 	},
 	"include": ["src"],
