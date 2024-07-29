@@ -16,4 +16,5 @@ export const shortenAddress = (
 			address.length
 		)}`;
 	}
+	return '';
 };

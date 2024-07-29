@@ -74,7 +74,7 @@ const Dashboard: React.FC = () => {
 			</div>
 			<div
 				className={c(
-					'flex flex-col w-full rounded-20px bg-white shadow-[0px,4px,40px,0px,rgba(0,0,0,0.08)] p-7px pb-37.51px mt-22.67px',
+					'flex flex-col w-full rounded-20px bg-white shadow-[0px_4px_40px_0px_rgba(0,0,0,0.08)] p-7px pb-37.51px mt-22.67px',
 					'xl:grid xl:grid-cols-2 xl:gap-43px xl:pl-3 xl:py-14px xl:pr-30px xl:mt-10 xl:rounded-50px'
 				)}
 			>

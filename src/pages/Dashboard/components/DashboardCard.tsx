@@ -15,7 +15,7 @@ export const DashboardCard: React.FC<IDashboardCard> = ({
 	return (
 		<div
 			className={c(
-				'flex py-7 px-12 justify-center items-center rounded-20px bg-[linear-gradient(90deg,_#754DFB_0.05%,_#F561C0_99.93%)] shadow-[0px,1.107px,5.537px,0px,rgba(0,0,0,0.12)]',
+				'flex py-7 px-12 justify-center items-center rounded-20px bg-[linear-gradient(90deg,_#754DFB_0.05%,_#F561C0_99.93%)] shadow-[0px_1.107px_5.537px_0px_rgba(0,0,0,0.12)]',
 				'xl:py-61px xl:px-226px xl:rounded-50px'
 			)}
 		>

@@ -22,7 +22,7 @@ const AdminCard: React.FC<IAdminCard> = ({
 			{/* Admin card mobile */}
 			<div
 				className={c(
-					'flex flex-col rounded-20px bg-white shadow-[0px,6px,50px,0px,rgba(0,0,0,0.08)] pt-14px pb-20px b-2px b-solid b-transparent transition-all',
+					'flex flex-col rounded-20px bg-white shadow-[0px_6px_50px_0px_rgba(0,0,0,0.08)] pt-14px pb-20px b-2px b-solid b-transparent transition-all',
 					'xl:hidden'
 				)}
 			>
@@ -84,7 +84,7 @@ const AdminCard: React.FC<IAdminCard> = ({
 				</div>
 			</div>
 			{/* Admin card desktop */}
-			<div className='hidden xl:block w-full rd-30px shadow-[0px,6px,50px,0px,rgba(0,0,0,0.08)] px-40px mt-21px'>
+			<div className='hidden xl:block w-full rd-30px shadow-[0px_6px_50px_0px_rgba(0,0,0,0.08)] px-40px mt-21px'>
 				<div className='table w-full'>
 					<div className='table-row [&>div]:(!table-cell vertical-mid pb-29px) text-12px whitespace-nowrap font-400 c-grey'>
 						<div className='w-32%'>

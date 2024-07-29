@@ -69,8 +69,8 @@ export const ModalPublish: React.FC<IModalPublish> = ({
 						>
 							<div
 								className={c(
-									'flex justify-between items-center h-36.184px rd-31.193px bg-input shadow-[0px,3.743px,49.91px,0px,rgba(0,0,0,0.16)] pt-8.73px pb-8.45px pl-20.59px pr-18.94px leading-19px text-12.477px',
-									'lg:(h-59px rd-50px shadow-[0px,6px,80px,0px,rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
+									'flex justify-between items-center h-36.184px rd-31.193px bg-input shadow-[0px_3.743px_49.91px_0px_rgba(0,0,0,0.16)] pt-8.73px pb-8.45px pl-20.59px pr-18.94px leading-19px text-12.477px',
+									'lg:(h-59px rd-50px shadow-[0px_6px_80px_0px_rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
 								)}
 							>
 								<span>Total Items</span>
@@ -78,8 +78,8 @@ export const ModalPublish: React.FC<IModalPublish> = ({
 							</div>
 							<div
 								className={c(
-									'flex justify-between items-center h-36.184px rd-31.193px bg-input shadow-[0px,3.743px,49.91px,0px,rgba(0,0,0,0.16)] pt-8.73px pb-8.45px pl-20.59px pr-18.94px leading-19px text-12.477px',
-									'lg:(h-59px rd-50px shadow-[0px,6px,80px,0px,rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
+									'flex justify-between items-center h-36.184px rd-31.193px bg-input shadow-[0px_3.743px_49.91px_0px_rgba(0,0,0,0.16)] pt-8.73px pb-8.45px pl-20.59px pr-18.94px leading-19px text-12.477px',
+									'lg:(h-59px rd-50px shadow-[0px_6px_80px_0px_rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
 								)}
 							>
 								<span>Per Item Fee</span>
@@ -88,8 +88,8 @@ export const ModalPublish: React.FC<IModalPublish> = ({
 							<div className='hidden lg:flex flex-col gap-12.48px'>
 								<div
 									className={c(
-										'flex justify-between items-center h-36.184px rd-31.193px bg-input shadow-[0px,3.743px,49.91px,0px,rgba(0,0,0,0.16)] pt-8.73px pb-8.45px pl-20.59px pr-18.94px leading-19px text-12.477px',
-										'lg:(h-59px rd-50px shadow-[0px,6px,80px,0px,rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
+										'flex justify-between items-center h-36.184px rd-31.193px bg-input shadow-[0px_3.743px_49.91px_0px_rgba(0,0,0,0.16)] pt-8.73px pb-8.45px pl-20.59px pr-18.94px leading-19px text-12.477px',
+										'lg:(h-59px rd-50px shadow-[0px_6px_80px_0px_rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
 									)}
 								>
 									<span>Current Credit Balance</span>
@@ -98,7 +98,7 @@ export const ModalPublish: React.FC<IModalPublish> = ({
 								<div
 									className={c(
 										'flex justify-between items-center h-36.184px rd-31.193px bg-input shadow-[0px,3.743px,49.91px,0px,rgba(0,0,0,0.16)] pt-8.73px pb-8.45px pl-20.59px pr-18.94px leading-19px text-12.477px',
-										'lg:(h-59px rd-50px shadow-[0px,6px,80px,0px,rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
+										'lg:(h-59px rd-50px shadow-[0px_6px_80px_0px_rgba(0,0,0,0.16)] px-33px py-14px text-xl)'
 									)}
 								>
 									<span>Per Item Fee</span>
@@ -119,8 +119,8 @@ export const ModalPublish: React.FC<IModalPublish> = ({
 						<div className='grid grid-cols-2 w-full gap-16.84px mt-46.82px'>
 							<button
 								className={c(
-									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-white shadow-[0px,12.477px,21.835px,0px,rgba(0,0,0,0.15)] bg-transparent hover:op-80 transition-all',
-									'lg:(py-25px px-73px rd-50px) shadow-[0px,20px,35px,0px,rgba(0,0,0,0.15)] b-1px'
+									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-white shadow-[0px_12.477px_21.835px_0px_rgba(0,0,0,0.15)] bg-transparent hover:op-80 transition-all',
+									'lg:(py-25px px-73px rd-50px) shadow-[0px_20px_35px_0px_rgba(0,0,0,0.15)] b-1px'
 								)}
 								onClick={() => hide(false)}
 							>
@@ -130,8 +130,8 @@ export const ModalPublish: React.FC<IModalPublish> = ({
 							</button>
 							<button
 								className={c(
-									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-transparent primary-gradient shadow-[0px,12.477px,21.835px,0px,rgba(0,0,0,0.15)] hover:op-80 transition-all',
-									'lg:(py-25px px-73px rd-50px) shadow-[0px,20px,35px,0px,rgba(0,0,0,0.15)] b-1px'
+									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-transparent primary-gradient shadow-[0px_12.477px_21.835px_0px_rgba(0,0,0,0.15)] hover:op-80 transition-all',
+									'lg:(py-25px px-73px rd-50px) shadow-[0px_20px_35px_0px_rgba(0,0,0,0.15)] b-1px'
 								)}
 							>
 								<span className='font-600 text-9.982px leading-10px text-white lg:(text-base leading-16px)'>

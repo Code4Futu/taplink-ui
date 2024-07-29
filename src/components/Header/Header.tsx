@@ -56,6 +56,10 @@ const Header: React.FC<IHeader> = ({ setOpenAddProduct, setOpenAddAdmin }) => {
 				return 'Products';
 			case '/admins':
 				return 'Admins';
+			case '/profile':
+				return 'Profile';
+			case '/subscription':
+				return 'Subscriptions';
 			default:
 				return 'Dashboard';
 		}
@@ -74,7 +78,9 @@ const Header: React.FC<IHeader> = ({ setOpenAddProduct, setOpenAddAdmin }) => {
 							onClick={() => toggleMenu(true)}
 						/>
 					</div>
-					{pathname === '/' && <ButtonConnect />}
+					{(pathname === '/' ||
+						pathname === '/profile' ||
+						pathname === '/subscription') && <ButtonConnect />}
 					{pathname === '/products' && (
 						<NewButton setOpenAddProduct={setOpenAddProduct} />
 					)}

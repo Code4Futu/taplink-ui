@@ -84,7 +84,7 @@ const Admin: React.FC<IAdminPage> = ({ openAddAdmin, setOpenAddAdmin }) => {
 				</div>
 				<button
 					className={c(
-						'py-14px px-4 flex items-center justify-center rd-100px primary-gradient shadow-[0px,4px,20px,0px,rgba(0,0,0,0.16)]',
+						'py-14px px-4 flex items-center justify-center rd-100px primary-gradient shadow-[0px_4px_20px_0px,rgba(0,0,0,0.16)]',
 						'2xl:px-28px'
 					)}
 					onClick={() => setOpenAddAdmin(true)}
@@ -129,7 +129,7 @@ const Admin: React.FC<IAdminPage> = ({ openAddAdmin, setOpenAddAdmin }) => {
 				</div>
 				<div
 					className={c(
-						'w-full rd-30px bg-white shadow-[0px,6px,50px,0px,rgba(0,0,0,0.08)] mt-17px pt-29px'
+						'w-full rd-30px bg-white shadow-[0px_6px_50px_0px_rgba(0,0,0,0.08)] mt-17px pt-29px'
 					)}
 				>
 					<div className='table w-full'>

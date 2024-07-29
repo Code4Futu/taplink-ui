@@ -53,7 +53,7 @@ export const MenuItems = [
 	},
 	{
 		title: 'Settings',
-		url: '/settings',
+		url: '/profile',
 		matchedUrl: [],
 		items: [],
 		image: (
@@ -80,7 +80,7 @@ export const MenuMobile: React.FC<IMenuMobile> = ({ visible, onDismiss }) => {
 					: 'translate-x-[-100%] lg:translate-none'
 			)}
 		>
-			<nav className='flex flex-col h-full bg-container shadow-[0px,4px,20px,0px,rgba(0,0,0,0.25)] rounded-r-30px'>
+			<nav className='flex flex-col h-full bg-container shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-r-30px'>
 				<div className='flex items-center py-5 pl-5 pr-6'>
 					<NavLink className='flex items-center' to='/'>
 						<IconMenu className='w-6 h-6 text-white' />

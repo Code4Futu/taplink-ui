@@ -5,6 +5,8 @@ import MainNavigation from '@components/Sidebar/Desktop';
 import Admin from '@pages/Admins';
 import Dashboard from '@pages/Dashboard';
 import Products from '@pages/Products';
+import Profile from '@pages/Profile';
+import Subscription from '@pages/Subcription';
 import c from 'classnames';
 import { observer } from 'mobx-react-lite';
 import { Suspense, useState } from 'react';
@@ -117,6 +119,48 @@ const Routes = observer(function Routes() {
 													openAddAdmin={openAddAdmin}
 													setOpenAddAdmin={setOpenAddAdmin}
 												/>
+											</div>
+										) : (
+											<Connect />
+										)
+									}
+								/>
+								<Route
+									path='/profile'
+									element={
+										address ? (
+											<div
+												className={c(
+													'px-22px pt-40px pb-16px',
+													'xl:(grid grid-cols-[277px_auto] gap-86px pl-11px pr-97px pt-14px pb-13px)'
+												)}
+											>
+												<div className='hidden xl:block fixed w-full max-w-277px h-[calc(100vh-22px)]'>
+													<MainNavigation />
+												</div>
+												<div className='op-0 h-0'></div>
+												<Profile />
+											</div>
+										) : (
+											<Connect />
+										)
+									}
+								/>
+								<Route
+									path='/subscription'
+									element={
+										address ? (
+											<div
+												className={c(
+													'px-22px pt-40px pb-16px',
+													'xl:(grid grid-cols-[277px_auto] gap-86px pl-11px pr-97px pt-14px pb-13px)'
+												)}
+											>
+												<div className='hidden xl:block fixed w-full max-w-277px h-[calc(100vh-22px)]'>
+													<MainNavigation />
+												</div>
+												<div className='op-0 h-0'></div>
+												<Subscription />
 											</div>
 										) : (
 											<Connect />

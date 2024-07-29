@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 function MainNavigation() {
 	return (
-		<nav className='relative flex flex-col justify-between w-full h-full bg-container rounded-[30px] shadow-[0px,4px,20px,0px,rgba(0,0,0,0.20)] pb-38px pt-76px min-h-[calc(100vh-56px)]'>
+		<nav className='relative flex flex-col justify-between w-full h-full bg-container rounded-[30px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.20)] pb-38px pt-76px min-h-[calc(100vh-56px)]'>
 			<div className='inline-flex w-full justify-center text-32px font-bold leading-48px'>
 				<div>
 					<span>Tap-</span>

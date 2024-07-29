@@ -73,8 +73,8 @@ export const AddAminModal: React.FC<IAddAdmin> = ({ hide }) => {
 						<div className='grid grid-cols-2 w-full gap-16.84px mt-46.82px'>
 							<button
 								className={c(
-									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-white shadow-[0px,12.477px,21.835px,0px,rgba(0,0,0,0.15)] bg-transparent hover:op-80 transition-all',
-									'lg:(py-25px px-73px rd-50px) shadow-[0px,20px,35px,0px,rgba(0,0,0,0.15)] b-1px'
+									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-white shadow-[0px_12.477px_21.835px_0px_rgba(0,0,0,0.15)] bg-transparent hover:op-80 transition-all',
+									'lg:(py-25px px-73px rd-50px) shadow-[0px_20px_35px_0px_rgba(0,0,0,0.15)] b-1px'
 								)}
 								onClick={() => hide(false)}
 							>
@@ -84,8 +84,8 @@ export const AddAminModal: React.FC<IAddAdmin> = ({ hide }) => {
 							</button>
 							<button
 								className={c(
-									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-transparent primary-gradient shadow-[0px,12.477px,21.835px,0px,rgba(0,0,0,0.15)] hover:op-80 transition-all',
-									'lg:(py-25px px-73px rd-50px) shadow-[0px,20px,35px,0px,rgba(0,0,0,0.15)] b-1px'
+									'inline-flex h-41.175px py-15.6px px-45.54px justify-center items-center rd-31.193px b-0.624px b-solid b-transparent primary-gradient shadow-[0px_12.477px_21.835px_0px_rgba(0,0,0,0.15)] hover:op-80 transition-all',
+									'lg:(py-25px px-73px rd-50px) shadow-[0px_20px_35px_0px_rgba(0,0,0,0.15)] b-1px'
 								)}
 							>
 								<span className='font-600 text-9.982px leading-10px text-white lg:(text-base leading-16px)'>

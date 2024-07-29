@@ -146,7 +146,7 @@ const Products: React.FC<IProductPage> = ({
 				placeholder='Search your product'
 				containerStyle='lg:hidden'
 			/>
-			<div className='hidden xl:flex justify-between'>
+			<div className='hidden 2xl:flex justify-between'>
 				<div className='hidden lg:flex items-baseline'>
 					<span className='text-32px text-background font-bold leading-48px'>
 						Manage Products
@@ -156,15 +156,15 @@ const Products: React.FC<IProductPage> = ({
 				</div>
 				<UserButton />
 			</div>
-			<div className='xl:hidden'>
+			<div className='2xl:hidden'>
 				<Tab filter={filter} setFilter={setFilter} />
 			</div>
-			<div className='hidden xl:flex items-center justify-between mt-30px flex-wrap'>
+			<div className='hidden 2xl:flex items-center justify-between mt-30px flex-wrap'>
 				<Tab filter={filter} setFilter={setFilter} />
 				<div className='flex gap-19px'>
 					<button
 						className={c(
-							'py-18px px-4 flex items-center justify-center rd-100px primary-gradient shadow-[0px,4px,20px,0px,rgba(0,0,0,0.16)]',
+							'py-18px px-4 flex items-center justify-center rd-100px primary-gradient shadow-[0px_4px_20px_0px_rgba(0,0,0,0.16)]',
 							'2xl:px-37px',
 							{
 								'!hidden': filter === 'published',
@@ -189,7 +189,7 @@ const Products: React.FC<IProductPage> = ({
 					</button>
 					<button
 						className={c(
-							'py-14px px-4 flex items-center justify-center rd-100px primary-gradient shadow-[0px,4px,20px,0px,rgba(0,0,0,0.16)]',
+							'py-14px px-4 flex items-center justify-center rd-100px primary-gradient shadow-[0px_4px_20px_0px_rgba(0,0,0,0.16)]',
 							'2xl:px-28px'
 						)}
 						onClick={() => setOpenAddProduct(true)}
@@ -207,7 +207,7 @@ const Products: React.FC<IProductPage> = ({
 				</span>
 			</div>
 			{/* Product list mobile */}
-			<div className={c('grid grid-rows-auto mt-15px gap-15px', 'xl:hidden')}>
+			<div className={c('grid grid-rows-auto mt-15px gap-15px', '2xl:hidden')}>
 				{(filter === 'selected'
 					? mockProducts.filter((product) => selectedItems.includes(product))
 					: mockProducts
@@ -223,11 +223,11 @@ const Products: React.FC<IProductPage> = ({
 				))}
 			</div>
 			{/* Product list desktop */}
-			<div className='overflow-auto hidden xl:block mt-48.49px'>
-				<div className='xl:table xl:b-border w-100%'>
+			<div className='overflow-auto hidden 2xl:block mt-48.49px'>
+				<div className='2xl:table 2xl:b-border w-100%'>
 					<div
 						className={c(
-							'hidden xl:table-row h-32px',
+							'hidden 2xl:table-row h-32px',
 							'[&>div]:(table-cell text-xl c-container font-500)',
 							'[&>div:first-child]:pl-20px',
 							'[&>div:last-child]:pr-auto'
@@ -249,7 +249,7 @@ const Products: React.FC<IProductPage> = ({
 				</div>
 				<div
 					className={c(
-						'w-full rd-30px bg-white shadow-[0px,6px,50px,0px,rgba(0,0,0,0.08)] mt-17px pt-29px',
+						'w-full rd-30px bg-white shadow-[0px_6px_50px_0px_rgba(0,0,0,0.08)] mt-17px pt-29px',
 						{
 							hidden: filter === 'selected' && selectedItems.length === 0,
 						}
@@ -302,14 +302,17 @@ const Products: React.FC<IProductPage> = ({
 			)}
 			{openAddProduct && (
 				<>
-					<div className='absolute w-full h-full inset-x-0 top-0 z-1 backdrop-blur-sm' />
+					<div
+						className='absolute w-full h-full inset-x-0 top-0 z-1 backdrop-blur-sm'
+						onClick={() => setOpenAddProduct(false)}
+					/>
 					<div
 						className={c(
 							'absolute w-full h-full inset-x-0 bg-container top-0 z-999 transition-all z-2',
-							'lg:(w-80% inset-y-0 left-20% rd-l-50px shadow-[0px,6px,80px,0px,rgba(0,0,0,0.16)] max-w-1293px overflow-hidden',
 							{
 								'min-h-[calc(100vh+320px)]': tab === 1,
-							}
+							},
+							'2xl:(w-80% inset-y-0 left-20% rd-l-50px shadow-[0px_6px_80px_0px_rgba(0,0,0,0.16)] max-w-1293px overflow-hidden)'
 						)}
 					>
 						{/* Add product content mobile */}
@@ -353,7 +356,7 @@ const Products: React.FC<IProductPage> = ({
 									setOpenAddProduct={setOpenAddProduct}
 								/>
 							</div>
-							<div className='flex flex-col bg-background rd-50px shadow-[0px,6px,80px,0px,rgba(0,0,0,0.16)] overflow-hidden py-29px px-47px max-w-535px'>
+							<div className='flex flex-col bg-background rd-50px shadow-[0px_6px_80px_0px_rgba(0,0,0,0.16)] overflow-hidden py-29px px-47px max-w-535px'>
 								<SecondStep handleDecTab={handleDecTab} />
 								<div className='flex justify-center items-center gap-33px mt-auto'>
 									<button
@@ -379,7 +382,7 @@ const Products: React.FC<IProductPage> = ({
 				<div
 					className={c(
 						'absolute w-full h-full bg-container top-0 inset-x-0 z-999 transition-all',
-						'lg:(max-w-545px max-h-778px bg-white shadow-[0px,6px,50px,0px,rgba(0,0,0,0.14)] rd-30px !inset-x-48%)'
+						'lg:(max-w-545px max-h-778px bg-white shadow-[0px_6px_50px_0px_rgba(0,0,0,0.14)] rd-30px !inset-x-48%)'
 					)}
 				>
 					{/* Edit Content Mobile */}
